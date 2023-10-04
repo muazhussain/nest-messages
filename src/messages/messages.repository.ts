@@ -1,6 +1,8 @@
+import { Injectable } from "@nestjs/common";
 import { writeFile } from "fs/promises";
 import { readFile } from "fs/promises";
 
+@Injectable()
 export class MessageRepository {
 
     async findOne(id: string) {
